@@ -19,9 +19,15 @@ class Server:
         
         while True:
             c, addr = s.accept()
-
-    def post():
+    
+    def getUsernameAndPassword():
+        with open('passwords.json') as json_file:
+            passwords = json.load(json_file)
+            
+        with open('accounts.json') as json_file:
+            accounts = json.load(json_file)
+        
+    def post(self):
+        getUsernameAndPassword()
 
     def get():
-
-
